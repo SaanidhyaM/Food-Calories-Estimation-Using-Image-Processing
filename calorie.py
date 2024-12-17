@@ -10,7 +10,7 @@ calorie_dict = { 1:52, 2:89,  3:41,4:16,5:40,6:47,7:18 }
 skin_multiplier = 5*2.3
 
 def getCalorie(label, volume): #volume in cm^3
-	calorie = calorie_dict[int(label)]/6
+	calorie = calorie_dict[int(label)]
 	density = density_dict[int(label)]
 	mass = volume*density*1.0
 	calorie_tot = (calorie/100.0)*mass
